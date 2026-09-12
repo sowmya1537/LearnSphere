@@ -22,9 +22,13 @@ faqQuestions.forEach(function(question) {
         const icon = this.querySelector("span");
 
         if (item.classList.contains("active")) {
+
             icon.textContent = "−";
+
         } else {
+
             icon.textContent = "+";
+
         }
 
     });
