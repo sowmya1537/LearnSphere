@@ -1,20 +1,27 @@
 // =========================
+// CURRENT YEAR
+// =========================
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
+
+// =========================
 // FAQ ACCORDION
 // =========================
 
-const faqButtons = document.querySelectorAll(".faq button");
+const faqQuestions = document.querySelectorAll(".faq-question");
 
-faqButtons.forEach(function(button) {
+faqQuestions.forEach(function(question) {
 
-    button.addEventListener("click", function() {
+    question.addEventListener("click", function() {
 
-        const faq = button.parentElement;
+        const item = this.parentElement;
 
-        faq.classList.toggle("active");
+        item.classList.toggle("active");
 
-        const icon = button.querySelector("span");
+        const icon = this.querySelector("span");
 
-        if (faq.classList.contains("active")) {
+        if (item.classList.contains("active")) {
             icon.textContent = "−";
         } else {
             icon.textContent = "+";
@@ -23,14 +30,3 @@ faqButtons.forEach(function(button) {
     });
 
 });
-
-
-// =========================
-// CURRENT YEAR
-// =========================
-
-const year = document.getElementById("year");
-
-if (year) {
-    year.textContent = new Date().getFullYear();
-}
