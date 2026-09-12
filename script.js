@@ -1,34 +1,96 @@
-// =========================
-// CURRENT YEAR
-// =========================
+// ================= MOBILE MENU =================
 
-document.getElementById("year").textContent = new Date().getFullYear();
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+
+menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
 
 
-// =========================
-// FAQ ACCORDION
-// =========================
+// Close mobile menu after clicking a link
 
-const faqQuestions = document.querySelectorAll(".faq-question");
+const navItems = document.querySelectorAll(".nav-links a");
 
-faqQuestions.forEach(function(question) {
+navItems.forEach(item => {
+    item.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+    });
+});
 
-    question.addEventListener("click", function() {
 
-        const item = this.parentElement;
+// ================= FAQ =================
 
-        item.classList.toggle("active");
+const faqItems = document.querySelectorAll(".faq-item");
 
-        const icon = this.querySelector("span");
+faqItems.forEach(item => {
 
-        if (item.classList.contains("active")) {
+    const question = item.querySelector(".faq-question");
+    const symbol = question.querySelector("span");
 
-            icon.textContent = "−";
+    question.addEventListener("click", () => {
 
-        } else {
+        const isActive = item.classList.contains("active");
 
-            icon.textContent = "+";
+        // Close all FAQ items
+        faqItems.forEach(otherItem => {
+            otherItem.classList.remove("active");
 
+            const otherSymbol =
+                otherItem.querySelector(".faq-question span");
+
+            otherSymbol.textContent = "+";
+        });
+
+        // Open clicked item
+        if (!isActive) {
+            item.classList.add("active");
+            symbol.textContent = "−";
+        }
+
+    });
+
+});
+
+
+// ================= FOOTER YEAR =================
+
+const yearElement = document.getElementById("year");
+
+if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+}
+
+
+// ================= SMOOTH SCROLL =================
+
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+
+    link.addEventListener("click", function (event) {
+
+        const targetId = this.getAttribute("href");
+
+        if (targetId === "#") {
+            return;
+        }
+
+        const target = document.querySelector(targetId);
+
+        if (target) {
+            event.preventDefault();
+
+            const headerHeight =
+                document.querySelector("header").offsetHeight;
+
+            const targetPosition =
+                target.getBoundingClientRect().top +
+                window.scrollY -
+                headerHeight;
+
+            window.scrollTo({
+                top: targetPosition,
+                behavior: "smooth"
+            });
         }
 
     });
