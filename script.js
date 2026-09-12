@@ -1,52 +1,43 @@
 // ================= MOBILE MENU =================
 
-const menuBtn = document.getElementById("menuBtn");
-const navLinks = document.getElementById("navLinks");
+const menuToggle = document.getElementById("menuToggle");
+const navMenu = document.getElementById("navMenu");
 
-menuBtn.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
+menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
 });
 
 
-// Close mobile menu after clicking a link
+// Close mobile menu when a navigation link is clicked
 
-const navItems = document.querySelectorAll(".nav-links a");
+const navLinks = document.querySelectorAll(".nav a");
 
-navItems.forEach(item => {
-    item.addEventListener("click", () => {
-        navLinks.classList.remove("active");
+navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        navMenu.classList.remove("active");
     });
 });
 
 
-// ================= FAQ =================
+// ================= FAQ ACCORDION =================
 
 const faqItems = document.querySelectorAll(".faq-item");
 
 faqItems.forEach(item => {
 
     const question = item.querySelector(".faq-question");
-    const symbol = question.querySelector("span");
 
     question.addEventListener("click", () => {
 
-        const isActive = item.classList.contains("active");
-
-        // Close all FAQ items
+        // Close other FAQ items
         faqItems.forEach(otherItem => {
-            otherItem.classList.remove("active");
-
-            const otherSymbol =
-                otherItem.querySelector(".faq-question span");
-
-            otherSymbol.textContent = "+";
+            if (otherItem !== item) {
+                otherItem.classList.remove("active");
+            }
         });
 
-        // Open clicked item
-        if (!isActive) {
-            item.classList.add("active");
-            symbol.textContent = "−";
-        }
+        // Open / close selected FAQ
+        item.classList.toggle("active");
 
     });
 
@@ -55,44 +46,8 @@ faqItems.forEach(item => {
 
 // ================= FOOTER YEAR =================
 
-const yearElement = document.getElementById("year");
+const currentYear = document.getElementById("currentYear");
 
-if (yearElement) {
-    yearElement.textContent = new Date().getFullYear();
+if (currentYear) {
+    currentYear.textContent = new Date().getFullYear();
 }
-
-
-// ================= SMOOTH SCROLL =================
-
-document.querySelectorAll('a[href^="#"]').forEach(link => {
-
-    link.addEventListener("click", function (event) {
-
-        const targetId = this.getAttribute("href");
-
-        if (targetId === "#") {
-            return;
-        }
-
-        const target = document.querySelector(targetId);
-
-        if (target) {
-            event.preventDefault();
-
-            const headerHeight =
-                document.querySelector("header").offsetHeight;
-
-            const targetPosition =
-                target.getBoundingClientRect().top +
-                window.scrollY -
-                headerHeight;
-
-            window.scrollTo({
-                top: targetPosition,
-                behavior: "smooth"
-            });
-        }
-
-    });
-
-});

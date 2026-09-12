@@ -7,590 +7,939 @@
     <title>LearnSphere Mentoria | Home Tuition Bengaluru</title>
 
     <meta name="description"
-          content="LearnSphere Mentoria provides home tuition for 1st to 10th Standard and 1st & 2nd PUC students in Bengaluru.">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
-          rel="stylesheet">
+        content="LearnSphere Mentoria provides home tuition for 1st to 10th Standard and 1st & 2nd PUC students in Bengaluru.">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <nav class="navbar container">
+    <!-- ================= HEADER ================= -->
 
-        <a href="#home" class="logo">
-            <img src="images/logo.png" alt="LearnSphere Mentoria Logo">
-            <span class="logo-text">LearnSphere Mentoria</span>
-        </a>
+    <header class="header">
+        <div class="container nav-container">
 
-        <button class="menu-btn" id="menuBtn" aria-label="Open menu">
-            ☰
-        </button>
+            <a href="#home" class="logo">
+                <img src="images/logo.png" alt="LearnSphere Mentoria Logo">
 
-        <ul class="nav-links" id="navLinks">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#vision">Vision & Mission</a></li>
-            <li><a href="#classes">Classes</a></li>
-            <li><a href="#mentors">Mentors</a></li>
-            <li><a href="#why-us">Why Us</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-
-    </nav>
-</header>
-
-
-<main>
-
-    <!-- HERO -->
-    <section class="hero" id="home">
-        <div class="container">
-
-            <div class="hero-content">
-
-                <span class="hero-label">
-                    HOME TUITION • BENGALURU
-                </span>
-
-                <h1>
-                    Learn with clarity.
-                </h1>
-
-                <p>
-                    LearnSphere Mentoria is a home tuition initiative
-                    focused on creating a clear, supportive and
-                    comfortable learning environment for students.
-                </p>
-
-                <p class="hero-subtitle">
-                    1st–10th Standard • 1st & 2nd PUC
-                </p>
-
-                <div class="hero-buttons">
-                    <a href="#classes" class="btn btn-primary">
-                        Explore Classes
-                    </a>
-
-                    <a href="#contact" class="btn btn-outline">
-                        Contact Us
-                    </a>
+                <div class="logo-text">
+                    <strong>LearnSphere</strong>
+                    <span>MENTORIA</span>
                 </div>
+            </a>
 
-            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
+                ☰
+            </button>
+
+            <nav class="nav" id="navMenu">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#vision">Vision & Mission</a>
+                <a href="#classes">Classes</a>
+                <a href="#mentors">Mentors</a>
+                <a href="#why">Why Us</a>
+                <a href="#contact" class="nav-contact">Contact</a>
+            </nav>
 
         </div>
-    </section>
+    </header>
 
 
-    <!-- ABOUT -->
-    <section class="about" id="about">
-        <div class="container">
+    <!-- ================= HERO ================= -->
 
-            <div class="section-heading">
-                <span>ABOUT US</span>
+    <main>
 
-                <h2>
-                    A simple place to learn better.
-                </h2>
+        <section class="hero" id="home">
 
-                <p>
-                    LearnSphere Mentoria provides home tuition for
-                    school and PUC students with an emphasis on
-                    understanding concepts clearly.
-                </p>
-            </div>
+            <div class="container hero-grid">
 
-            <div class="about-grid">
+                <div class="hero-content">
 
-                <div class="about-text">
-                    <p>
-                        We believe learning becomes easier when students
-                        can ask questions freely, understand concepts
-                        step by step and study in a comfortable environment.
-                    </p>
-
-                    <p>
-                        Our tuition support is designed for students from
-                        1st Standard to 10th Standard and 1st & 2nd PUC.
-                    </p>
-                </div>
-
-                <div class="about-text">
-                    <p>
-                        LearnSphere Mentoria is a new home tuition initiative
-                        based in Bengaluru.
-                    </p>
-
-                    <p>
-                        Our approach is focused on clear explanations,
-                        regular learning and building confidence in students.
-                    </p>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- VISION & MISSION -->
-    <section class="vision" id="vision">
-        <div class="container">
-
-            <div class="section-heading">
-                <span>VISION & MISSION</span>
-
-                <h2>
-                    Learning that builds confidence.
-                </h2>
-            </div>
-
-            <div class="vision-grid">
-
-                <div class="info-card">
-                    <div class="card-number">01</div>
-
-                    <h3>Our Vision</h3>
-
-                    <p>
-                        To create a learning environment where students
-                        understand concepts clearly and develop confidence
-                        in their studies.
-                    </p>
-                </div>
-
-                <div class="info-card">
-                    <div class="card-number">02</div>
-
-                    <h3>Our Mission</h3>
-
-                    <p>
-                        To support students through simple explanations,
-                        consistent guidance and a comfortable home tuition
-                        environment.
-                    </p>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- CLASSES -->
-    <section class="classes" id="classes">
-        <div class="container">
-
-            <div class="section-heading">
-                <span>ACADEMIC PROGRAMS</span>
-
-                <h2>
-                    Classes we support.
-                </h2>
-
-                <p>
-                    Tuition support is available across school and PUC levels.
-                </p>
-            </div>
-
-            <div class="class-grid">
-
-                <div class="class-card">
-                    <div class="class-number">01</div>
-
-                    <h3>Foundation</h3>
-
-                    <p>1st – 5th Standard</p>
-                    <p>Building strong academic basics.</p>
-                </div>
-
-
-                <div class="class-card">
-                    <div class="class-number">02</div>
-
-                    <h3>Middle & Secondary</h3>
-
-                    <p>6th – 10th Standard</p>
-                    <p>Strengthening concepts and preparation.</p>
-                </div>
-
-
-                <div class="class-card">
-                    <div class="class-number">03</div>
-
-                    <h3>PUC</h3>
-
-                    <p>1st & 2nd PUC</p>
-                    <p>Focused academic support for PUC students.</p>
-                </div>
-
-
-                <div class="class-card">
-                    <div class="class-number">04</div>
-
-                    <h3>State Syllabus</h3>
-
-                    <p>State Syllabus</p>
-                    <p>Support aligned with the student's academic level.</p>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- MENTORS -->
-    <section class="mentors" id="mentors">
-        <div class="container">
-
-            <div class="section-heading">
-                <span>OUR MENTORS</span>
-
-                <h2>
-                    Meet the mentors.
-                </h2>
-
-                <p>
-                    Guidance from students who are continuing their own
-                    academic journey while helping others learn.
-                </p>
-            </div>
-
-            <div class="mentor-grid">
-
-                <!-- Ramya FIRST -->
-                <div class="mentor-card">
-
-                    <h3>Ramya</h3>
-
-                    <p class="mentor-role">
-                        M.Com Student — Accounts & Finance
-                    </p>
-
-                    <p class="mentor-subject">
-                        Accounts & Finance
-                    </p>
-
-                </div>
-
-
-                <!-- Sowmya SECOND -->
-                <div class="mentor-card">
-
-                    <h3>Sowmya</h3>
-
-                    <p class="mentor-role">
-                        B.Tech Computer Science Student
-                    </p>
-
-                    <p class="mentor-subject">
-                        Computer Science
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- WHY US -->
-    <section class="why-us" id="why-us">
-        <div class="container">
-
-            <div class="section-heading">
-                <span>WHY LEARNSPHERE</span>
-
-                <h2>
-                    Focused on meaningful learning.
-                </h2>
-            </div>
-
-            <div class="why-grid">
-
-                <div class="why-card">
-                    <h3>Clear Concepts</h3>
-
-                    <p>
-                        Topics are explained in a simple and understandable way.
-                    </p>
-                </div>
-
-
-                <div class="why-card">
-                    <h3>Comfortable Learning</h3>
-
-                    <p>
-                        Home tuition provides a familiar environment for learning.
-                    </p>
-                </div>
-
-
-                <div class="why-card">
-                    <h3>Student Support</h3>
-
-                    <p>
-                        Students can ask questions and clarify their doubts.
-                    </p>
-                </div>
-
-
-                <div class="why-card">
-                    <h3>Consistent Guidance</h3>
-
-                    <p>
-                        Regular guidance helps students stay focused on learning.
-                    </p>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- HOW LEARNING WORKS -->
-    <section class="process">
-        <div class="container">
-
-            <div class="section-heading">
-                <span>HOW LEARNING WORKS</span>
-
-                <h2>
-                    A clear learning process.
-                </h2>
-            </div>
-
-            <div class="process-grid">
-
-                <div class="process-card">
-                    <div class="card-number">01</div>
-
-                    <h3>Understand</h3>
-
-                    <p>
-                        Learn the concept from the basics.
-                    </p>
-                </div>
-
-
-                <div class="process-card">
-                    <div class="card-number">02</div>
-
-                    <h3>Ask</h3>
-
-                    <p>
-                        Clear doubts and ask questions freely.
-                    </p>
-                </div>
-
-
-                <div class="process-card">
-                    <div class="card-number">03</div>
-
-                    <h3>Practice</h3>
-
-                    <p>
-                        Strengthen understanding through practice.
-                    </p>
-                </div>
-
-
-                <div class="process-card">
-                    <div class="card-number">04</div>
-
-                    <h3>Improve</h3>
-
-                    <p>
-                        Build confidence through consistent learning.
-                    </p>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- FAQ -->
-    <section class="faq">
-        <div class="container">
-
-            <div class="section-heading">
-                <span>FAQ</span>
-
-                <h2>
-                    Frequently asked questions.
-                </h2>
-            </div>
-
-            <div class="faq-list">
-
-                <div class="faq-item">
-
-                    <button class="faq-question">
-                        Which classes do you support?
-                        <span>+</span>
-                    </button>
-
-                    <div class="faq-answer">
-                        We support students from 1st Standard to
-                        10th Standard, along with 1st & 2nd PUC.
+                    <div class="hero-tag">
+                        HOME TUITION • BENGALURU
                     </div>
 
-                </div>
+                    <h1>
+                        Learn with
+                        <span>clarity.</span>
+                        Grow with confidence.
+                    </h1>
 
+                    <p>
+                        Focused home tuition designed to help students
+                        understand concepts clearly, strengthen their
+                        fundamentals, and build confidence in learning.
+                    </p>
 
-                <div class="faq-item">
-
-                    <button class="faq-question">
-                        Where is the tuition conducted?
-                        <span>+</span>
-                    </button>
-
-                    <div class="faq-answer">
-                        Tuition is conducted at home in Bengaluru,
-                        Karnataka.
+                    <div class="hero-points">
+                        <span>1st–10th Standard</span>
+                        <span>1st & 2nd PUC</span>
+                        <span>State Syllabus</span>
                     </div>
 
-                </div>
-
-
-                <div class="faq-item">
-
-                    <button class="faq-question">
-                        Which syllabus do you support?
-                        <span>+</span>
-                    </button>
-
-                    <div class="faq-answer">
-                        We provide support for the State Syllabus.
-                    </div>
-
-                </div>
-
-
-                <div class="faq-item">
-
-                    <button class="faq-question">
-                        How can I contact LearnSphere Mentoria?
-                        <span>+</span>
-                    </button>
-
-                    <div class="faq-answer">
-                        You can contact us through the phone numbers
-                        provided in the Contact section.
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- CONTACT -->
-    <section class="contact" id="contact">
-        <div class="container">
-
-            <div class="section-heading">
-
-                <span>CONTACT US</span>
-
-                <h2>
-                    Let's talk about learning.
-                </h2>
-
-                <p>
-                    Get in touch with LearnSphere Mentoria for tuition
-                    enquiries.
-                </p>
-
-            </div>
-
-
-            <div class="contact-grid">
-
-                <div class="contact-info">
-
-                    <div class="contact-item">
-                        <span>PHONE</span>
-
-                        <a href="tel:9902981785">
-                            9902981785
+                    <div class="hero-buttons">
+                        <a href="#classes" class="btn btn-primary">
+                            Explore Classes
                         </a>
 
-                        <br>
-
-                        <a href="tel:9986028904">
-                            9986028904
+                        <a href="#contact" class="btn btn-outline">
+                            Get in Touch
                         </a>
                     </div>
 
+                </div>
 
-                    <div class="contact-item">
 
-                        <span>LOCATION</span>
+                <div class="hero-visual">
+
+                    <div class="hero-card main-card">
+
+                        <div class="hero-icon">
+                            ✦
+                        </div>
+
+                        <p class="small-label">
+                            LEARNING THAT MATTERS
+                        </p>
+
+                        <h2>
+                            Strong basics.<br>
+                            Better understanding.
+                        </h2>
 
                         <p>
-                            Bengaluru, Karnataka, India
+                            A supportive learning environment
+                            from school fundamentals to PUC.
+                        </p>
+
+                    </div>
+
+                    <div class="floating-card floating-one">
+                        <strong>1st–10th</strong>
+                        <span>Standard</span>
+                    </div>
+
+                    <div class="floating-card floating-two">
+                        <strong>1st & 2nd</strong>
+                        <span>PUC</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section class="section about-section" id="about">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">ABOUT US</span>
+
+                    <h2>
+                        A focused approach to
+                        <span>better learning.</span>
+                    </h2>
+
+                    <p>
+                        LearnSphere Mentoria is a home tuition initiative
+                        focused on providing students with clear,
+                        structured and supportive learning.
+                    </p>
+                </div>
+
+
+                <div class="about-grid">
+
+                    <div class="about-text">
+
+                        <p>
+                            We believe that students learn better when
+                            concepts are explained clearly and they have
+                            the opportunity to ask questions without
+                            hesitation.
+                        </p>
+
+                        <p>
+                            Our approach focuses on understanding,
+                            fundamentals and consistent learning rather
+                            than simply memorising answers.
+                        </p>
+
+                        <div class="highlight-box">
+                            <strong>Our focus</strong>
+                            <span>
+                                Clear concepts • Strong fundamentals •
+                                Consistent learning
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="about-feature-card">
+
+                        <div class="feature-number">01</div>
+
+                        <h3>
+                            Learning with purpose
+                        </h3>
+
+                        <p>
+                            Every lesson is designed around understanding
+                            the subject and developing confidence step
+                            by step.
                         </p>
 
                     </div>
 
                 </div>
 
+            </div>
 
-                <div class="contact-map">
+        </section>
 
-                    <a
-                        href="https://maps.app.goo.gl/VG4iENNry5wGKWU37?g_st=aw"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="map-button"
-                    >
-                        View on Google Maps
-                    </a>
+
+        <!-- ================= VISION & MISSION ================= -->
+
+        <section class="section vision-section" id="vision">
+
+            <div class="container">
+
+                <div class="section-heading centered">
+                    <span class="eyebrow">OUR DIRECTION</span>
+
+                    <h2>
+                        Vision & <span>Mission</span>
+                    </h2>
+
+                    <p>
+                        Building a learning environment where students
+                        can understand, improve and move forward with
+                        confidence.
+                    </p>
+                </div>
+
+
+                <div class="vision-grid">
+
+                    <div class="info-card vision-card">
+
+                        <div class="card-icon">
+                            ◈
+                        </div>
+
+                        <span class="card-label">
+                            OUR VISION
+                        </span>
+
+                        <h3>
+                            Make learning meaningful.
+                        </h3>
+
+                        <p>
+                            To encourage students to understand concepts
+                            deeply and develop a positive approach towards
+                            learning.
+                        </p>
+
+                    </div>
+
+
+                    <div class="info-card mission-card">
+
+                        <div class="card-icon">
+                            ◆
+                        </div>
+
+                        <span class="card-label">
+                            OUR MISSION
+                        </span>
+
+                        <h3>
+                            Support every step.
+                        </h3>
+
+                        <p>
+                            To provide structured home tuition with
+                            individual attention, clear explanations and
+                            a supportive learning environment.
+                        </p>
+
+                    </div>
 
                 </div>
 
             </div>
 
+        </section>
+
+
+        <!-- ================= CLASSES ================= -->
+
+        <section class="section classes-section" id="classes">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">
+                        ACADEMIC LEVELS
+                    </span>
+
+                    <h2>
+                        Classes we <span>support.</span>
+                    </h2>
+
+                    <p>
+                        Home tuition for school and PUC students following
+                        the State Syllabus.
+                    </p>
+
+                </div>
+
+
+                <div class="classes-grid">
+
+                    <!-- Foundation -->
+
+                    <div class="class-card class-blue">
+
+                        <div class="class-top">
+                            <span class="class-number">01</span>
+                            <span class="class-tag">FOUNDATION</span>
+                        </div>
+
+                        <h3>
+                            1st – 5th
+                        </h3>
+
+                        <p>
+                            Building strong academic foundations through
+                            clear explanations and consistent practice.
+                        </p>
+
+                        <div class="class-footer">
+                            <span>Primary School</span>
+                            <span>→</span>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Middle & Secondary -->
+
+                    <div class="class-card class-teal">
+
+                        <div class="class-top">
+                            <span class="class-number">02</span>
+                            <span class="class-tag">SECONDARY</span>
+                        </div>
+
+                        <h3>
+                            6th – 10th
+                        </h3>
+
+                        <p>
+                            Strengthening concepts and supporting students
+                            through middle and secondary school.
+                        </p>
+
+                        <div class="class-footer">
+                            <span>Middle & Secondary</span>
+                            <span>→</span>
+                        </div>
+
+                    </div>
+
+
+                    <!-- PUC -->
+
+                    <div class="class-card class-yellow">
+
+                        <div class="class-top">
+                            <span class="class-number">03</span>
+                            <span class="class-tag">PUC</span>
+                        </div>
+
+                        <h3>
+                            1st & 2nd PUC
+                        </h3>
+
+                        <p>
+                            Supporting PUC students with structured
+                            learning and stronger subject understanding.
+                        </p>
+
+                        <div class="class-footer">
+                            <span>Pre-University</span>
+                            <span>→</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="syllabus-note">
+                    <span>✓</span>
+                    <p>
+                        <strong>State Syllabus</strong>
+                        <br>
+                        Tuition available for students from 1st Standard
+                        through 10th Standard, and 1st & 2nd PUC.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= MENTORS ================= -->
+
+        <section class="section mentors-section" id="mentors">
+
+            <div class="container">
+
+                <div class="section-heading centered">
+
+                    <span class="eyebrow">
+                        OUR MENTORS
+                    </span>
+
+                    <h2>
+                        Learn with the right
+                        <span>guidance.</span>
+                    </h2>
+
+                    <p>
+                        Meet the mentors behind LearnSphere Mentoria.
+                    </p>
+
+                </div>
+
+
+                <div class="mentor-grid">
+
+                    <!-- Ramya -->
+
+                    <div class="mentor-card">
+
+                        <div class="mentor-avatar">
+                            R
+                        </div>
+
+                        <div class="mentor-content">
+
+                            <span class="mentor-role">
+                                M.COM STUDENT
+                            </span>
+
+                            <h3>
+                                Ramya
+                            </h3>
+
+                            <p>
+                                Accounts & Finance
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Sowmya -->
+
+                    <div class="mentor-card">
+
+                        <div class="mentor-avatar">
+                            S
+                        </div>
+
+                        <div class="mentor-content">
+
+                            <span class="mentor-role">
+                                B.TECH COMPUTER SCIENCE STUDENT
+                            </span>
+
+                            <h3>
+                                Sowmya
+                            </h3>
+
+                            <p>
+                                Computer Science
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= WHY US ================= -->
+
+        <section class="section why-section" id="why">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">
+                        WHY LEARNSPHERE
+                    </span>
+
+                    <h2>
+                        Simple things that make
+                        <span>learning better.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="why-grid">
+
+                    <div class="why-card">
+
+                        <span class="why-number">01</span>
+
+                        <div class="why-icon">
+                            ◎
+                        </div>
+
+                        <h3>
+                            Clear Explanations
+                        </h3>
+
+                        <p>
+                            Concepts are explained in a simple and
+                            understandable way.
+                        </p>
+
+                    </div>
+
+
+                    <div class="why-card">
+
+                        <span class="why-number">02</span>
+
+                        <div class="why-icon">
+                            ◌
+                        </div>
+
+                        <h3>
+                            Individual Attention
+                        </h3>
+
+                        <p>
+                            Home tuition creates a comfortable setting
+                            for questions and discussion.
+                        </p>
+
+                    </div>
+
+
+                    <div class="why-card">
+
+                        <span class="why-number">03</span>
+
+                        <div class="why-icon">
+                            ✧
+                        </div>
+
+                        <h3>
+                            Strong Fundamentals
+                        </h3>
+
+                        <p>
+                            Focus on understanding the basics before
+                            moving to more difficult concepts.
+                        </p>
+
+                    </div>
+
+
+                    <div class="why-card">
+
+                        <span class="why-number">04</span>
+
+                        <div class="why-icon">
+                            ↗
+                        </div>
+
+                        <h3>
+                            Supportive Learning
+                        </h3>
+
+                        <p>
+                            A positive environment that encourages
+                            students to keep learning.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= HOW LEARNING WORKS ================= -->
+
+        <section class="section process-section" id="process">
+
+            <div class="container">
+
+                <div class="section-heading centered">
+
+                    <span class="eyebrow">
+                        OUR APPROACH
+                    </span>
+
+                    <h2>
+                        How learning <span>works.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="process-grid">
+
+                    <div class="process-card">
+
+                        <span>01</span>
+
+                        <h3>
+                            Understand
+                        </h3>
+
+                        <p>
+                            Learn the concept clearly before moving ahead.
+                        </p>
+
+                    </div>
+
+
+                    <div class="process-line"></div>
+
+
+                    <div class="process-card">
+
+                        <span>02</span>
+
+                        <h3>
+                            Practise
+                        </h3>
+
+                        <p>
+                            Strengthen understanding through practice.
+                        </p>
+
+                    </div>
+
+
+                    <div class="process-line"></div>
+
+
+                    <div class="process-card">
+
+                        <span>03</span>
+
+                        <h3>
+                            Improve
+                        </h3>
+
+                        <p>
+                            Identify areas that need more attention and
+                            keep improving.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FAQ ================= -->
+
+        <section class="section faq-section" id="faq">
+
+            <div class="container faq-container">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">
+                        FAQ
+                    </span>
+
+                    <h2>
+                        Frequently asked
+                        <span>questions.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="faq-list">
+
+                    <div class="faq-item">
+
+                        <button class="faq-question">
+                            <span>
+                                Which classes do you provide tuition for?
+                            </span>
+
+                            <span class="faq-icon">+</span>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                We provide home tuition for 1st to 10th
+                                Standard and 1st & 2nd PUC students under
+                                the State Syllabus.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="faq-item">
+
+                        <button class="faq-question">
+                            <span>
+                                Where is the tuition conducted?
+                            </span>
+
+                            <span class="faq-icon">+</span>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                Tuition is conducted at home in Bengaluru.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="faq-item">
+
+                        <button class="faq-question">
+                            <span>
+                                How can I contact LearnSphere Mentoria?
+                            </span>
+
+                            <span class="faq-icon">+</span>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                You can contact us through the phone
+                                numbers provided in the Contact section.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="faq-item">
+
+                        <button class="faq-question">
+                            <span>
+                                Is this a campus or coaching centre?
+                            </span>
+
+                            <span class="faq-icon">+</span>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                No. LearnSphere Mentoria is a home tuition
+                                initiative.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section class="contact-section" id="contact">
+
+            <div class="container contact-container">
+
+                <div class="contact-content">
+
+                    <span class="eyebrow">
+                        GET IN TOUCH
+                    </span>
+
+                    <h2>
+                        Let's make learning
+                        <span>better.</span>
+                    </h2>
+
+                    <p>
+                        Have a question about our tuition? Get in touch
+                        with LearnSphere Mentoria.
+                    </p>
+
+                </div>
+
+
+                <div class="contact-details">
+
+                    <div class="contact-item">
+
+                        <span class="contact-label">
+                            CALL US
+                        </span>
+
+                        <a href="tel:9902981785">
+                            9902981785
+                        </a>
+
+                        <a href="tel:9986028904">
+                            9986028904
+                        </a>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <span class="contact-label">
+                            LOCATION
+                        </span>
+
+                        <p>
+                            Bengaluru, Karnataka, India
+                        </p>
+
+                        <a
+                            href="https://maps.app.goo.gl/VG4iENNry5wGKWU37?g_st=aw"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="map-link"
+                        >
+                            View on Google Maps →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-container">
+
+            <div class="footer-brand">
+
+                <a href="#home" class="logo footer-logo">
+
+                    <img
+                        src="images/logo.png"
+                        alt="LearnSphere Mentoria Logo"
+                    >
+
+                    <div class="logo-text">
+                        <strong>LearnSphere</strong>
+                        <span>MENTORIA</span>
+                    </div>
+
+                </a>
+
+                <p>
+                    Home tuition focused on clear concepts,
+                    strong fundamentals and confident learning.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h4>
+                    Quick Links
+                </h4>
+
+                <a href="#about">About</a>
+                <a href="#classes">Classes</a>
+                <a href="#mentors">Mentors</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h4>
+                    Contact
+                </h4>
+
+                <a href="tel:9902981785">
+                    9902981785
+                </a>
+
+                <a href="tel:9986028904">
+                    9986028904
+                </a>
+
+                <span>
+                    Bengaluru, Karnataka
+                </span>
+
+            </div>
+
         </div>
-    </section>
-
-</main>
 
 
-<!-- FOOTER -->
-<footer>
+        <div class="footer-bottom">
 
-    <div class="container footer-content">
+            <div class="container">
 
-        <p>
-            © <span id="year"></span>
-            <strong>LearnSphere Mentoria</strong>
-        </p>
+                <p>
+                    © <span id="currentYear"></span>
+                    LearnSphere Mentoria. All rights reserved.
+                </p>
 
-        <p>
-            Home Tuition • Bengaluru
-        </p>
+            </div>
 
-    </div>
+        </div>
 
-</footer>
+    </footer>
 
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
